@@ -6,12 +6,17 @@ public class Main {
 
         System.out.println("App for converting miles into kilometres");
         double mile = 1;
-        System.out.println(mile + " mile is"+ milesToKilometres(mile)+ " kilometres");
+        System.out.println(mile + " mile is "+ milesToKilometres(mile)+ " kilometres");
+        double km = 1;
+        System.out.println(km + " km is "+ kilometresToMiles(km)+ " miles");
 
     }
 
     public static double milesToKilometres(double miles){
-        return miles / M;
+        return miles * M;
+    }
+    public static double kilometresToMiles(double kilometres){
+        return kilometres / M;
     }
 }
 
